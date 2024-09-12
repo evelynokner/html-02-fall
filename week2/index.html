@@ -1,0 +1,75 @@
+<!-- week 2 lesson -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>Week 2 | Semantic Elements</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- description is seen in search engine -->
+        <meta name="description" content="This week we are looking at semantic elements">
+        <!-- noindex nofollow makes site not show up in search engine -->
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>
+        <header>
+            <!-- To start our page we will add a header. 
+                The header will contain our logo & menu-->
+            <!-- div to have 2 columns --> 
+            <div>
+                <a target="_self" href="index.html"> <!-- href is destination -->
+                    <img src="./img/logo.png" alt="header logo">
+                </a>
+            </div>
+            <nav>
+                <menu>
+                    <li>
+                        <a href="#"> <!-- a - anchor. # - placeholder -->
+                            Menu 1
+                        </a>
+                    </li>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <!-- the first section is often called a masthead/hero image -->
+            <section>
+                <h1>I am the MAIN TITLE</h1>
+                <h2>I am a sub heading</h2>
+            </section>
+            <section>
+                <h3>Section Title</h3>
+                <!-- don't use <pre> or <p1> -->
+                    <!-- <mark> adds a highlight to text -->
+                    <p>Lorem ipsum <mark> dolor sit amet consectetur adipisicing elit. </mark>
+                        Debitis nisi dignissimos nobis cumque expedita architecto.</p>
+            </section>
+            <section>
+                <!-- embed youtube video -->
+                <h3>Iframe Example</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bm-GpUEn-ag?si=J1VFKr82dH30xm5A" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h3>HTML Video Player</h3>
+                <video controls> <!-- if this was a background video, add autoplay and loop -->
+                    <source src="./video/super-mario.mp4" type="video/mp4">
+                    <!-- message if video options are exhausted --> Your browser is old
+                </video>
+            </section>
+        </main>
+        <aside>
+            <article>
+                <figure>
+                    <img src="./img/n64.jpg" alt="nintendo 64">
+                    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+                </figure>
+            </article>
+        </aside>
+        <footer>
+            <!-- could put name and student # in footer for assignments -->
+            <h6>This is the footer</h6>
+        </footer> 
+    </body>
+</html>
