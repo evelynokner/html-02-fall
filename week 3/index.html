@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This week we are looking at HTML forms and an intro to CSS">
+        <meta name="robots" content="noindex, unfollow">
+        <title>Week 3 | Forms & CCSS</title>
+        <!-- below we will be adding our CSS file -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- logo container -->
+            <div>
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="header logo">
+                </a>
+            </div>
+            <nav>
+                <menu>
+                    <li>
+                        <a href="#" target="_self">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">Link 2</a>
+                    </li>
+                </menu>
+            </nav>
+        </header>
+        <section>
+            <h1>HTML Forms & Intro to CSS</h1>
+        </section>
+        <main>
+            <!-- define a row of content -->
+            <section>
+                <div>
+                    <form action="someFile" method="post">
+                        <label>*Your Name</label>
+                        <br>
+                        <input type="text" name="name" required>
+                        <br>
+                        <!-- email input looks for @ symbol -->
+                        <input type="email" name="email" placeholder="*Your Email" required>
+                        <br>
+                        <label>Your Password (required)</label>
+                        <br>
+                        <input type="password" name="password" required>
+                        <br>
+                        <!-- radio: can only select 1 button -->
+                        <label>Choose One:</label>
+                        <br>
+                        <!-- ids must be unique, names must be the same-->
+                        <input type="radio" id="css" name="fav-lang" value="CSS">
+                            <label for="css">CSS</label>
+                        <input type="radio" id="html" name="fav-lang" value="HTML">
+                            <label for="html">HTML</label>
+                        <!-- checkbox: can select any number -->
+                        <label>Select all that apply</label>
+                        <br>
+                        <input type="checkbox" id="choice1" name="choice1" value="Choice 1">
+                            <label for="choice1">Choice 1</label>
+                        <input type="checkbox" id="choice2" name="choice2" value="Choice 2">
+                            <label for="choice2">Choice 2</label>
+                        <br>
+                        <label>Pick a number from 1 to 10</label>
+                        <br>
+                        <input type="number" name="quantity" min="1" max="10">
+                        <br>
+                        <label>Phone Number</label>
+                        <br>
+                        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-123-4567">
+                        <br>
+                        <input type="submit" value="Complete Form">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <article>
+                <img src="./img/image-1.jpg" alt="image 1">
+                <h4>Title</h4>
+                <a href="#">Button</a>
+            </article>
+            <article>
+                <img src="./img/image-2.jpg" alt="image 2">
+                <h4>Title</h4>
+                <a href="#">Button</a>
+            </article>
+        </aside>
+        <footer>
+            <img src="./img/logo.png" alt="footer logo">
+        </footer>
+    </body>
+</html>
+    

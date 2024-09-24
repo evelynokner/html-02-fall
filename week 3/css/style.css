@@ -1,0 +1,86 @@
+/* > goes to child, + goes to sibling */
+body{
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+h1, h4{
+    font-family: sans-serif;
+}
+p, a, li, label{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none; /** remove underlines on links **/
+}
+/** style header **/
+header{
+    height: 125px;
+    background-color: #f8f8f8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+header > div{
+    /* float property: older way to create a layout */
+    width: auto;
+    height: 115px;
+    float: left;
+    top: 20%;
+}
+header > div > a > img{
+    width: auto;
+    height: 100%;
+}
+header > nav{
+    float: right;
+    padding-top: 35px;
+    top: 30%;
+}
+header > nav > menu{
+    list-style: none; /* removes bullet points */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+header > nav > menu > li{
+    float: right;
+    padding-left: 10px;
+}
+/* masthead section - use measurement unit called vh (based on viewport) */
+body > header + section{
+    height: 100vh; /* 100% of viewport height */
+    background-color: #8338ec;
+    padding-top: 10%;
+}
+body > header + section > h1{
+    color: #f8f8f8;
+    font-size: 54px;
+}
+main{
+    width: 60%;
+    float: left;
+}
+main > section{
+    padding: 5%;
+}
+main > section > div{
+    width: 50%;
+    margin: auto;
+}
+aside{
+    background-color: grey;
+    width: 40%;
+    float: right;
+}
+aside > article{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+aside > article > img{
+    width: 100%;
+    margin-top: 25px;
+}
+footer{
+    background-color: #0e0e0e;
+    width: 100%;
+    clear: both;
+}
