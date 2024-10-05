@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This week we will be creating our layout using CSS Flexbox">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Week 5 | Layouts with CSS Flexbox</title>
+    <!-- add Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- add our CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <!-- add our header -->
+    <header>
+      <!-- logo container -->
+      <div>
+        <a href="index.html"><img src="./img/logo.png" alt="header logo"></a>
+      </div>
+      <nav>
+        <menu>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </menu>
+      </nav>
+    </header>
+    <section class="lesson-masthead">
+      <h1>Layout with CSS Flexbox</h1>
+    </section>
+    <!-- adding a div as a flex container for the main and aside -->
+    <div class="flex-content-container">
+      <main>
+        <!-- 2 column row (divs) -->
+        <section>
+          <div>
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ut.</p>
+          </div>
+          <div>
+            <img src="./img/image-1.jpg" alt="image 1">
+          </div>
+        </section>
+        <!-- 2 column row -->
+        <section>
+          <div>
+            <img src="./img/image-2.jpg" alt="image 2">
+          </div>
+          <div>
+            <h3>Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, sequi.</p>
+          </div>
+        </section>
+        <!-- 6 column row -->
+        <section>
+          <div>
+            <img src="./img/image-3.jpg" alt="image 3">
+          </div>
+          <div>
+            <img src="./img/image-4.jpg" alt="image 4">
+          </div>
+          <div>
+            <img src="./img/image-5.jpg" alt="image 5">
+          </div>
+          <div>
+            <img src="./img/image-six.jpg" alt="image 6">
+          </div>
+          <div>
+            <img src="./img/image-1.jpg" alt="image 1">
+          </div>
+          <div>
+            <img src="./img/image-2.jpg" alt="image 2">
+          </div>
+      </section>
+      </main>
+      <aside>
+        <article>
+          <figure>
+            <img src="./img/image-3.jpg" alt="image 3">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img src="./img/image-3.jpg" alt="image 3">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+          </figure>
+        </article>
+      </aside>
+    </div>
+    <footer>
+      <div>
+        <a href="index.html"><img src="./img/logo.png" alt="footer logo"></a>
+      </div>
+      <div>
+        <h6>Footer Title</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam!</p>
+      </div>
+      <div>
+        <form action="thefilethatwillprocesstheform" method="post">
+          <p><input type="text" name="name" placeholder="Your Name"></p>
+          <p><input type="email" name="email" placeholder="Your Emal"></p>
+          <p><textarea placeholder="Leave a message..."></textarea></p>
+          <input type="submit" value="Submit Form">
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
