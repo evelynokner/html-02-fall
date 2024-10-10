@@ -1,0 +1,137 @@
+body{
+    margin: 0px; /* remove border */
+    background-color: #ffd69f;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto Mono", sans-serif;
+}
+p, a, li, label{
+    font-family: "Nunito", sans-serif;
+    text-decoration: none; /* remove underline on list items */
+}
+header > div{
+    height: 40px;
+    width: auto;
+    flex-grow: 1;
+}
+/* resize header & footer logo */
+header > div > a > img, footer > div > a > img{ 
+    height: 140px;
+    width: auto;
+}
+/* remove bullet points & move position */
+header > nav > menu{
+    display: flex;
+    list-style: none; 
+    padding-left: 70%;
+    margin: 0px;
+}
+header > nav > menu > li{
+    padding: 30px 10px; /*0px top & bottom, 10px left & right*/
+}
+/* change colour + font size of menu text */
+header > nav > menu > li > a{
+    color: #0e0e0e;
+    font-size: 25px;
+}
+/* "Pizza Shop" h1 title */
+.masthead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    background-color: #e28c03;
+    margin-bottom: 15px;
+}
+.masthead h1{
+    color: #f8f8f8;
+    font-size: 80px;
+}
+/* flexbox content with main & aside */
+.flex-content-container{
+    display: flex;
+}
+main{
+    width: 100%;
+}
+main > section{
+    display: flex;
+    margin: 0px;
+    padding: -10px;
+    align-items: center;
+}
+main > section > div{
+    width: 100%;
+    padding: none;
+    align-items: center;
+}
+/* resize images in main */
+main > section > div > img{
+    width: 98%;
+    height: auto;
+}
+main > section + section + section > div > h2{
+    padding-left: 35%;
+    padding-top: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: #0c5fb1;
+    font-size: 40px;
+}
+main > section + section + section > div > form > p > label{
+    font-size: 30px;
+}
+main > section + section + section > div > form > input[type=checkbox], input[type=radio]{
+    margin: 3%;
+    align-items: center;
+}
+/* edit form input boxes */
+main > section + section + section > div > form input{
+    border: solid 3px #0c5fb1;
+    border-radius: 5px;
+    padding: 1% 10%;
+    text-align: center;
+}
+main > section + section + section > div > form > p, form input, textarea{
+    padding: 1% 10%;
+    text-align: center;
+}
+aside{
+    width: 20%;
+    padding: 2% 0%;
+}
+/* put border & bg colour on aside article */
+aside article{
+    border: dashed #0c5fb1;
+    background-color: #cdd8e4;
+}
+/* center and resize article image(s) & text */
+aside > article > img{
+    width: 80%;
+    height: auto;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+aside article p{
+    width: 80%;
+    height: auto;
+    padding-left: 10%;
+}
+::placeholder{
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 15px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #e28c03;
+    margin-top: 15px;
+}
+footer > div{
+    width: 45%;
+}
+footer > div > h4{
+    align-items: center;
+    font-style: italic;
+    font-size: 20px;
+    color: #f8f8f8;
+}

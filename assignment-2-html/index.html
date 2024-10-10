@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Assignment 2: Pizza Shop">
+        <meta name="robots" content="noindex, unfollow">
+        <title>Assignment 2 | Pizza Shop</title>
+        <!-- add CSS file -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- add Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- header logo container -->
+            <div>
+                <a href="index.html"><img src="./img/pizza-logo.png" alt="header pizza logo"></a>
+            </div>
+            <nav>
+                <!-- pizza menu/toppings & place order links -->
+                <menu>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Order Online</a></li>
+                </menu>
+            </nav>
+        </header>
+        <section class="masthead">
+            <h1>Pizza Shop</h1>
+        </section>
+        <div class="flex-content-container">
+            <main>
+                <!-- pizza images section -->
+                <!-- each div is a new column -->
+                <section> <!-- sect 1 -->
+                    <div>
+                        <img src="./img/pepperoni-pizza.jpeg" alt="pepperoni pizza">
+                    </div>
+                    <div>
+                        <img src="./img/veggie-pizza.jpg" alt="veggie pizza">
+                    </div>
+                </section>
+                <section> <!-- sect 2 -->
+                    <div>
+                        <img src="./img/mushroom-pizza-2.jpg" alt="mushroom pizza">
+                    </div>
+                    <div>
+                        <img src="./img/hawaiian-pizza.jpg" alt="hawaiian pizza">
+                    </div>
+                </section>
+                <!-- form section -->
+                <section> <!-- sect 3 -->
+                    <div>
+                        <h2>Place Your Order</h2>
+                        <form action="aFile" method="post">
+                            <!-- pick pizza toppings using checkboxes -->
+                            <p><label>Select Toppings:</label></p>
+                            <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
+                                <label for="pepperoni">Pepperoni</label>
+                            <input type="checkbox" id="mushrooms" name="mushrooms" value="Mushrooms">
+                                <label for="mushrooms">Mushrooms</label>
+                            <input type="checkbox" id="peppers" name="peppers" value="Peppers">
+                                <label for="peppers">Peppers</label>
+                            <input type="checkbox" id="bacon" name="bacon" value="Bacon">
+                                <label for="bacon">Bacon</label>
+                            <input type="checkbox" id="pineapple" name="pineapple" value="Pineapple">
+                                <label for="pineapple">Pineapple</label>
+                            <input type="checkbox" id="olives" name="olives" value="Olives">
+                                <label for="olives">Olives</label>
+                            <!-- pizza size using radio button -->
+                            <p><label>Select Pizza Size:</label></p>
+                            <input type="radio" id="small" name="size" value="Small">
+                                <label for="small">Small</label>
+                            <input type="radio" id="medium" name="size" value="Medium">
+                                <label for="small">Medium</label>
+                            <input type="radio" id="large" name="size" value="Large">
+                                <label for="large">Large</label>
+                            <!-- personal info -->
+                            <p><textarea placeholder="How many pizzas?"></textarea></p>
+                            <p><input type="text" name="name" placeholder="Your Name"></p>
+                            <p><input type="text" name="address" placeholder="Your Address"></p>
+                            <p><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(XXX)-XXX-XXXX"></p>
+                            <p><input type="submit" value="Place Order"></p>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <aside>
+                <article>
+                    <img src="./img/mushroom-pizza.jpg" alt="horizontally long mushroom pizza image">
+                    <p>Mushroom Pizza</p>
+                </article>
+                <article>
+                    <img src="./img/hawaiian-pizza-2.jpg" alt="horizontally long hawaiian pizza image">
+                    <p>Hawaiian Pizza</p>
+                </article>
+            </aside>
+        </div>
+        <footer>
+            <!-- footer logo container -->
+            <div>
+                <a href="index.html"><img src="./img/pizza-logo.png" alt="footer pizza logo"></a>
+            </div>
+            <div>
+                <h4>Thank you for ordering!</h4>
+            </div>
+        </footer>
+    </body>
+</html>
