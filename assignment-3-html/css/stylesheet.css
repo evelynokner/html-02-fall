@@ -1,0 +1,7 @@
+body{
+    /*grid-area: mast;
+    height: 100vh;*/
+    background-image: url("../img/bttf-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
