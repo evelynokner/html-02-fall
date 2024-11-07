@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- add metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This week we will start looking at how to add JavaScript to our web application">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Introduction to JavaScript</title>
+        <!-- add fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- add CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- add JavaScript -->
+        <script type="text/javascript" src="./js/custom-js.js"></script>
+    </head>
+    <body>
+        <header id="lesson-global-header">
+            <!-- we will create our header content using JS -->
+        </header>
+        <section class="lesson-masthead">
+            <h1>An Introduction to JavaScript</h1>
+        </section>
+        <main id="lab-main">
+            <!-- one column -->
+            <section>
+                <h3>What is JavaScript?</h3>
+                <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+            </section>
+            <!-- two column -->
+            <section class="lesson-two-col">
+                <div>
+                    <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><mark>Client-side JavaScript</mark> extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+                        <li><mark>Server-side JavaScript</mark> extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>Using Our Console</h3>
+                <p>One of our best tools when working with JavaScript is the web console (we used this for the responsive lesson as well!!).</p>
+                <p>So Let's start by opening our console. To do this right click and select <mark>inspect</mark>. Once we have done that select the console tab.</p>
+                <p>Now type <mark>console.log(eval("300 + 600"));</mark></p>
+            </section>
+            <section>
+                <h3>Variables</h3>
+                <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+                <p>A JavaScript identifier usually starts with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0 – 9). Because JavaScript is case-sensitive, letters include the characters A through Z (uppercase) as well as a through z (lowercase).</p>
+                <p>Variables should always be declared before they are used. JavaScript used to allow assigning to undeclared variables, which creates an undeclared global variable. This is an error in strict mode and should be avoided altogether.</p>
+                <!-- add two columns -->
+                <section class="lesson-two-col">
+                    <div>
+                        <h3>Var</h3>
+                        <p>With the keyword var. For example, var x = 42. This syntax can be used to declare both local and global variables, depending on the execution context.</p>
+                    </div>
+                    <div>
+                        <h3>Let or Const</h3>
+                        <p>With the keyword const or let. For example, let y = 13. This syntax can be used to declare a block-scope local variable.</p>
+                    </div>
+                </section>
+            </section>
+            <!-- one column -->
+            <section>
+                <h3>Examples</h3>
+                <p>Alright so that's the basics, let's go over some examples!</p>
+            </section>
+        </main>
+        <aside id="aside">
+            <h4>Our Examples</h4>
+            <section>
+                <article id="ex1">
+
+                </article>
+            </section>
+        </aside>
+        <footer>
+            <h6>Lesson code by Jeremy McCulley ... not to be used in assigned work.</h6>
+        </footer>
+    </body>
+</html>

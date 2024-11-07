@@ -1,0 +1,79 @@
+/** General Styling **/
+body{
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+p,a,li{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+/** Layout styling **/
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav nav nav nav"
+        "hero hero hero hero"
+        "main main main aside"
+        "foot foot foot foot";
+}
+header{
+    /** the main styling will be done using JS **/
+    grid-area: nav;
+}
+.lesson-masthead{
+    grid-area: hero;
+    background-color: #73648A;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lesson-masthead > h1{
+    color: #f8f8f8;
+    font-size: 68px;
+}
+main{
+    grid-area: main;
+}
+main > section{
+    padding: 2% 5%;
+}
+main > section > h3{
+    font-size: 26px;
+}
+.lesson-two-col{
+    display: flex;
+    align-items: center;
+}
+.lesson-two-col > div{
+    padding: 10px;
+}
+main > section + section + section + section + section{
+    text-align: center;
+}
+p > mark,
+li > mark{
+    background-color: #453750;
+    color: #f8f8f8;
+    padding: 0px 5px;
+}
+aside{
+    grid-area: aside;
+    background-color: #0C0910;
+}
+footer{
+    grid-area: foot;
+    background-color: #73648A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+footer > h6{
+    color: #f8f8f8;
+}
