@@ -1,12 +1,18 @@
+/* add poster background image */
 body{
     /*grid-area: mast;*/
     height: 100%;
     width: auto;
-    /* cannot find a more HD photo without text */
     background-image: url("../img/bttf-bg-pic.jpg");
     background-size: cover;
     background-position: top;
     background-attachment: scroll;
+}
+/* change logo size */
+.bttf-logo-container a img{
+    width: 650px;
+    height: auto;
+    padding-left: 6px;
 }
 /* change font, font size, font color, letter spacing to match poster */
 h1, h2, h3, h4, h5, h6, p, a, li, figcaption, td{
@@ -17,21 +23,46 @@ h1, h2, h3, h4, h5, h6, p, a, li, figcaption, td{
     color: #eaeaea;
     letter-spacing: -1px;
 }
-.title-font-large, .title-font-small{
+/* make title font elements the same font & colour */
+.large-size-font, .medium-size-font, .small-size-font{
     font-family: "Abel", sans-serif;
     font-weight: 500;
     color: #eaeaea;
 }
 /* change font size of titles */
-.title-font-large{
-    font-size: 50px;
+.large-size-font{
+    font-size: 45px;
     letter-spacing: -1.8px;
 }
 /* smaller font in titles */
-.title-font-small{
+.medium-size-font{
     font-size: 28px;
     letter-spacing: -1.5px;
     padding-left: 6px;
     padding-right: 6px;
 }
-
+/*          TO DO:
+    crop background photo
+    add padding to left and top/bottom of title text and <main> text
+*/
+header, .section-one, .section-two, .section-three{
+    padding-left: 20px;
+}
+.section-one{
+    padding-top: 60px;
+}
+.section-two{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section-three{
+    padding-bottom: 1000px;
+}
+/* align text to the right at bottom of poster */
+footer{
+    text-align: right;
+}
+footer img{
+    width: 100px;
+    height: auto;
+}
