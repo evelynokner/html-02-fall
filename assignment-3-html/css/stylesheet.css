@@ -1,7 +1,37 @@
 body{
-    /*grid-area: mast;
-    height: 100vh;*/
-    background-image: url("../img/bttf-bg.jpg");
+    /*grid-area: mast;*/
+    height: 100%;
+    width: auto;
+    /* cannot find a more HD photo without text */
+    background-image: url("../img/bttf-bg-pic.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    background-attachment: scroll;
 }
+/* change font, font size, font color, letter spacing to match poster */
+h1, h2, h3, h4, h5, h6, p, a, li, figcaption, td{
+    font-family: "Abel", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    color: #eaeaea;
+    letter-spacing: -1px;
+}
+.title-font-large, .title-font-small{
+    font-family: "Abel", sans-serif;
+    font-weight: 500;
+    color: #eaeaea;
+}
+/* change font size of titles */
+.title-font-large{
+    font-size: 50px;
+    letter-spacing: -1.8px;
+}
+/* smaller font in titles */
+.title-font-small{
+    font-size: 28px;
+    letter-spacing: -1.5px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
