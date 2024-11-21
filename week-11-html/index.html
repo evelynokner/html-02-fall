@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head id="head">
+    <title>User Interaction using jQuery</title>
+    <meta name="description" content="This lesson will look at how to add basic user interactions using jQuery">
+    <!--  link js files  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/custom-js.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <section class="hero">
+      <div>
+        <h1>User Interaction using jQuery</h1>
+      </div>
+    </section>
+    <main>
+      <section class="row-1">
+        <h3>Filter the Table</h3>
+        <p><input id="myInput" type="text" placeholder="Search ..."></p>
+        <table>
+          <thead>
+            <!-- table row -->
+              <tr>
+                <!-- table head -->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+              </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <!-- table div -->
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@email.ca</td>
+            </tr>
+            <tr>
+              <!-- table div -->
+              <td>Ricky</td>
+              <td>Bobby</td>
+              <td>firstnlast@email.ca</td>
+            </tr>
+            <tr>
+              <!-- table div -->
+              <td>Peter</td>
+              <td>Parker</td>
+              <td>spidy@email.ca</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="row-2">
+        <!-- accordion: opening a page closes another expanded page -->
+        <div id="accordion">
+          <ul>
+            <!-- list item 1 -->
+            <li class="active">
+              <h3><span></span> Title 1</h3>
+              <div class="row">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, ipsum.</p>
+              </div>
+            </li>
+            <!-- list item 2 -->
+            <li>
+              <h3><span></span> Title 2</h3>
+              <div class="row">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, ipsum.</p>
+              </div>
+            </li>
+            <!-- list item 3 -->
+            <li>
+              <h3><span></span> Title 3</h3>
+              <div class="row">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, ipsum.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="row-3">
+        <div class="container">
+          <div class="slider">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>
