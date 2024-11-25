@@ -1,0 +1,7 @@
+body{
+    background-color: #afe1ed;
+}
+#header div a img, #footer div a img{
+    width: 100px;
+    height: auto;
+}
