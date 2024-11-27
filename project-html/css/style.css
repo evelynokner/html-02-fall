@@ -1,7 +1,15 @@
+/* change bg colour & remove border/margin */
 body{
     background-color: #afe1ed;
+    margin: 0px;
 }
+/* change size of header & footer logo */
 #header div a img, #footer div a img{
-    width: 100px;
+    width: 200px;
     height: auto;
+    padding: 20px 20px 20px 100px; /* top, right, bottom, left */
+}
+#header, #footer{
+    background-color: #f8f8f8;
+    padding: 10px;
 }
