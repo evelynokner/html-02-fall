@@ -1,4 +1,4 @@
-/* change bg colour & remove border/margin */
+/* change bg colour & remove white border/margin */
 body{
     background-color: #afe1ed;
     margin: 0px;
@@ -10,9 +10,27 @@ body{
     padding: 20px 20px 20px 100px; /* top, right, bottom, left */
 }
 #header, #footer{
-    background-color: #f8f8f8;
+    background-color: #fbfbfb;
     padding: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+#header div{
+    flex-grow: 1;
+}
+/* adjust menu location */
+#header nav menu{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 80px;
 }
 #header nav menu li{
-    list-style: none;
+    padding: 10px 30px;
+}
+#header nav menu li a{
+    color: #d10b6e;
+    text-decoration: none;
+    font-size: 25px;
 }
