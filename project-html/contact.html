@@ -2,6 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head id="head">
+        <!-- add metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow">
         <meta name="description" content="Contact Page">
         <title>Contact</title>
         <!-- CSS -->
@@ -14,16 +18,25 @@
     <body>
         <header id="header"></header>
         <main>
-            <form>
+            <div class="contact-info">
                 <h1>CONTACT US</h1>
+                <p>Phone: (877) 980.6221</p>
+                <p>Email: customerservice@bntca.com</p>
+            </div>
+            
+
+            <form>
+                
                 <!-- first name, last name, email, phone num, "Your message" -->
                 <form action="processingFile" method="post">
-                    <p><input type="text" name="name" placeholder="First Name"></p>
-                    <p><input type="text" name="name" placeholder="Last Name"></p>
-                    <p><input type="email" name="email" placeholder="Email"></p>
-                    <p><textarea placeholder="Your message:"></textarea></p>
-                    <input type="submit" value="Submit Form">
-                  </form>
+                    <p><label for="name">Your Name:</label></p>
+                    <p><input type="text" name="name" placeholder="John Doe"></p>
+                    <p><label for="email">Your Email:</label></p>
+                    <p><input type="email" name="email" placeholder="johndoe@email.com"></p>
+                    <p><label for="phone">Your Phone Number:</label></p>
+                    <p><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(123) 456-7891"></p>
+                    <p><textarea placeholder="Your message..."></textarea></p>
+                    <input type="submit" value="Send Message">
             </form>
         </main>
         <footer id="footer"></footer>
