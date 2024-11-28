@@ -1,16 +1,20 @@
 /* change bg colour & remove white border/margin */
 body{
-    background-color: #afe1ed;
+    background-color: #ffffff;
     margin: 0px;
+}
+/* apply Google font to all text */
+h1, h2, h3, h4, h5, h6, p{
+    font-family: "Outfit", sans-serif;
 }
 /* change size of header & footer logo */
 #header div a img, #footer div a img{
-    width: 200px;
+    width: 250px;
     height: auto;
     padding: 20px 20px 20px 100px; /* top, right, bottom, left */
 }
 #header, #footer{
-    background-color: #fbfbfb;
+    background-color: #c7ecff;
     padding: 10px;
     height: 100px;
     display: flex;
@@ -41,4 +45,15 @@ body{
     display: flex;
     align-items: center;
     padding: 10px;
+}
+/** HOMEPAGE **/
+.home-masthead img{
+    width: 100%;
+    height: auto;
+}
+/** ABOUT PAGE **/
+.bandai-logo-container img, .characters img{
+    display: block;
+    width: 50%;
+    margin: auto;
 }
