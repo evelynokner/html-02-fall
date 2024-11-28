@@ -34,3 +34,11 @@ body{
     text-decoration: none;
     font-size: 25px;
 }
+/* adjust footer social media icons */
+#footer .sns-icons a img{
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
