@@ -4,7 +4,7 @@ body{
     margin: 0px;
 }
 /* apply Google font to all text */
-h1, h2, h3, h4, h5, h6, p, figcaption{
+h1, h2, h3, h4, h5, h6, p, figcaption, li{
     font-family: "Outfit", sans-serif;
 }
 /* change size of header & footer logo */
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
     padding: 10px 30px;
 }
 #header nav menu li a{
-    color: #d10b6e;
+    color: #ff0080;
     text-decoration: none;
     font-size: 25px;
 }
@@ -51,20 +51,21 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
     width: 100%;
     height: auto;
 }
+.about, .history{
+    font-size: 20px;
+    padding: 20px 100px;
+}
 .about{
     text-align: left;
 }
 .history{
     text-align: right;
 }
-aside{
-    display: block;
-}
 .characters{
-    
+    text-align: center;
 }
 .video{
-    
+    text-align: center;
 }
 
 /** ABOUT PAGE (about.html) **/
@@ -72,6 +73,7 @@ aside{
     display: block;
     width: 50%;
     margin: auto;
+    padding-top: 20px;
 }
 .bandai-team{
     background-color: #efcf5b;
