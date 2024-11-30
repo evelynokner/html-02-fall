@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li{
     width: 100%;
     height: auto;
 }
+.home-main{
+    width: 75%;
+    align-items: left;
+}
 .about, .history{
     font-size: 20px;
     padding: 20px 100px;
@@ -67,9 +71,30 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li{
 .video{
     text-align: center;
 }
-.home-aside aside h1{
-    border: #40cccc;
+.home-aside{
+    display: flex;
+    width: 25%;
+    /*padding: 2% 0%;*/
+    background-color: #fff5c6;
 }
+
+/***********************************/
+.home-aside > article{
+    width: 90%; /* 90% of 25% */
+    
+    text-align: center;
+}
+.home-aside article figure{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+.home-aside article figure img{
+    width: 100%;
+    height: auto;
+}
+/***********************************/
+
 
 /** ABOUT PAGE (about.html) **/
 .bandai-logo-container img, .characters img{
@@ -89,11 +114,52 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li{
 }
 
 /** SHOP PAGE (shop.html) **/
-.products-row img{
-    width: 25%;
-    height: auto;
+/**
+.products-row {
+    
+    
     display: flex;
     align-items: center;
+    display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
+.products-row figure a img{
+    width: 25%;
+    height: auto;
+}
+**/
+.shop-main > section{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+}
+.shop-main > section > div{
+    width: 50;
+    padding: 10px;
+}
+.shop-main > section > div > img{
+    width: 100%;
+    height: auto;
+}
+
+/***********************************/
+.products-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.products-column {
+    flex: 50%;
+    padding: 0 4px;
+}
+  
+.products-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100px;
+}
+/***********************************/
 
 /** CONTACT PAGE (contact.html) **/

@@ -22,14 +22,14 @@
     <body>
         <!-- applied with jQuery -->
         <header id="header"></header>
-        <main>
+        <main class="shop-main">
             <section>
                 <h1>PRODUCTS</h1>
             </section>
             <!-- products section w images & links to single product pages -->
-            <section class="products">
-                <!-- row -->
-                <div class="products-row">
+            <section class="products-row">
+                <!-- column -->
+                <div class="products-column">
                     <!-- product 1 -->
                     <figure>
                         <a href="product-1.html">
@@ -37,6 +37,8 @@
                         </a>
                         <figcaption>Original Tamagotchi Apple Sweets</figcaption>
                     </figure>
+                </div>
+                <div class="products-column">
                     <!-- product 2 -->
                     <figure>
                         <a href="product-2.html">
@@ -44,6 +46,8 @@
                         </a>
                         <figcaption>Tamagotchi Connection Bubbles</figcaption>
                     </figure>
+                </div>
+                <div class="products-column">
                     <!-- product 3 -->
                     <figure>
                         <a href="product-3.html">
@@ -51,9 +55,19 @@
                         </a>
                         <figcaption>Tamagotchi Uni Pink</figcaption>
                     </figure>
-                </section>
                 </div>
-                
+            </section>
+            <section class="products-row">
+                <div class="products-column">
+                    <!-- product 2 -->
+                    <figure>
+                        <a href="product-2.html">
+                            <img src="./img/products/tmg-connection-bubbles.png" alt="tamagotchi connection bubbles">
+                        </a>
+                        <figcaption>Tamagotchi Connection Bubbles</figcaption>
+                    </figure>
+                </div>
+            </section>
         </main>
         <!-- applied with jQuery -->
         <footer id="footer"></footer>
