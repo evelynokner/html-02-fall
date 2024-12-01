@@ -113,13 +113,22 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     display: flex;
     align-items: left;
 }
+.bandai-team{
+    display: flex;
+    align-items: center;
+}
 
 /** SHOP PAGE (shop.html) **/
 .shop-main > section{
     display: flex;
     padding: 2%;
 }
-.shop-main > section > h1{
+/* align products title */
+.shop-main section h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
     text-align: center;
     font-size: 50px;
 }
@@ -130,7 +139,6 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 }
 .products-column{
     width: 50%;
-    padding: 0px;
 }
 .products-column figure{
     border-style: dashed;
