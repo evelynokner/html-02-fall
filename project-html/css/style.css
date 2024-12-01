@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input{
     width: 50%;
     margin: auto;
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 .bandai-team{
     background-color: #efcf5b;
@@ -181,9 +182,16 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input{
     text-align: center;
 }
 .contact-info{
-    background-color: #c3ecff;
+    background-color: #c7f2ff;
+    display: block;
+    margin: auto;
+    width: 35%;
+    margin: autp;
+    text-align: center;
     font-size: 25px;
-    padding-top: 50px;
+    border-style: double;
+    border-width: 20px;
+    border-color: #245484;
 }
 .contact-form p{
     font-size: 25px;
