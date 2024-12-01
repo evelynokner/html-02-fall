@@ -4,7 +4,7 @@ body{
     margin: 0px;
 }
 /* apply Google font to all text */
-h1, h2, h3, h4, h5, h6, p, figcaption, li{
+h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input{
     font-family: "Outfit", sans-serif;
 }
 /* change size of header & footer logo */
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li{
 }
 
 /***********************************/
-.home-aside > article{
+.home-aside article{
     width: 90%; /* 90% of 25% */
     
     text-align: center;
@@ -162,4 +162,34 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li{
 }
 /***********************************/
 
+/** PRODUCT PAGES **/
+.product-div img{
+    display: flex;
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.product-text p{
+    display: flex;
+    justify-content: right;
+}
+
+
 /** CONTACT PAGE (contact.html) **/
+.contact-info, .contact-form{
+    text-align: center;
+}
+.contact-info{
+    background-color: #c3ecff;
+    font-size: 25px;
+    padding-top: 50px;
+}
+.contact-form p{
+    font-size: 25px;
+    padding: 5px 0px;
+    margin: 0px;
+}
+.line{
+    border-color: #40cccc;
+}
