@@ -4,7 +4,7 @@ body{
     margin: 0px;
 }
 /* apply Google font to all text */
-h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input{
+h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     font-family: "Outfit", sans-serif;
 }
 /* change size of header & footer logo */
@@ -115,67 +115,78 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input{
 }
 
 /** SHOP PAGE (shop.html) **/
-/**
-.products-row {
-    
-    
-    display: flex;
-    align-items: center;
-    display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.products-row figure a img{
-    width: 25%;
-    height: auto;
-}
-**/
 .shop-main > section{
     display: flex;
     padding: 2%;
+}
+.shop-main > section > h1{
+    text-align: center;
+    font-size: 50px;
+}
+/* align product images as a grid */
+.products-row{
+    display: flex;
+    margin: auto;
+}
+.products-column{
+    width: 50%;
+    padding: 0px;
+}
+.products-column figure{
+    border-style: dashed;
+    display: flex;
     align-items: center;
 }
-.shop-main > section > div{
-    width: 50;
-    padding: 10px;
-}
-.shop-main > section > div > img{
-    width: 100%;
-    height: auto;
-}
-
-/***********************************/
-.products-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-
-.products-column {
-    flex: 50%;
-    padding: 0 4px;
-}
-  
 .products-column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100px;
+    height: 300px;
+    width: auto;
+}
+.back-button{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.back-button a{
+    text-decoration: none;
+}
+.back-button button{
+    padding: 10px 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #c7f2ff;
+    border-color: #245484;
 }
 /***********************************/
 
 /** PRODUCT PAGES **/
-.product-div img{
-    display: flex;
-    width: 40%;
-    height: auto;
-    display: flex;
-    align-items: center;
-}
-.product-text p{
-    display: flex;
-    justify-content: right;
-}
 
+/* display image and product info side by side */
+.product-title{
+    display: block;
+    justify-content: center;
+    padding-left: 15%;
+    margin: 0px;
+    background-color: #ff0080;
+    width: 500px;
+}
+.product-title h1{
+    text-align: left;
+    font-size: 30px;
+}
+.product-content{
+    display: flex;
+    align-items: top;
+    padding: 0px 15% 1.5% 15%;
+}
+.product-content div h4{
+    font-size: 30px;
+}
+.product-content img{
+    width: 50%;
+    height: auto;
+}
 
 /** CONTACT PAGE (contact.html) **/
 .contact-info, .contact-form{
