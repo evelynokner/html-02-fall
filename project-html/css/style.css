@@ -59,6 +59,14 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     font-size: 20px;
     padding: 20px 100px;
 }
+.about h1, .history h1{
+    color: #ff0080;
+    text-decoration: underline;
+}
+.history h3{
+    color: #40a9ee;
+    
+}
 .about{
     text-align: left;
 }
@@ -74,7 +82,6 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 .home-aside{
     display: flex;
     width: 25%;
-    /*padding: 2% 0%;*/
     background-color: #fff5c6;
 }
 
@@ -140,16 +147,22 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 .products-column{
     width: 50%;
 }
+/* align name of product vertically with product img */
 .products-column figure{
     border-style: dashed;
-    display: flex;
-    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+.products-column figure figcaption{
+    font-size: 20px;
 }
 .products-column img {
     height: 300px;
     width: auto;
 }
 .back-button{
+    margin: auto;
+    width: 60%;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -158,13 +171,16 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     text-decoration: none;
 }
 .back-button button{
-    padding: 10px 30px;
+    padding: 0px 20px;
     font-size: 20px;
     display: flex;
     align-items: center;
-    border-radius: 10px;
-    background-color: #c7f2ff;
-    border-color: #245484;
+    border-radius: 20px;
+    background-color: #d6f6ff;
+    border-color: #40a9ee;
+}
+.back-button img{
+    width: 80px;
 }
 /***********************************/
 
