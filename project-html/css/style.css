@@ -64,8 +64,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     text-decoration: underline;
 }
 .history h3{
-    color: #40a9ee;
-    
+    color: #40a9ee;    
 }
 .about{
     text-align: left;
@@ -104,6 +103,22 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 
 
 /** ABOUT PAGE (about.html) **/
+.about-company h1{
+    font-size: 35px;
+    text-align: center;
+}
+.about-company h2{
+    font-size: 30px;
+}
+.about-company h4{
+    font-size: 25px;
+}
+.about-company blockquote{
+    text-align: center;
+    background-color: #ed0000;
+    padding: 30px 120px;
+    margin: 0px;
+}
 .bandai-logo-container img, .characters img{
     display: block;
     width: 50%;
@@ -148,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     width: 50%;
 }
 /* align name of product vertically with product img */
-.products-column figure{
+.products-column figure, .bandai-team figure{
     border-style: dashed;
     vertical-align: middle;
     text-align: center;
@@ -156,7 +171,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 .products-column figure figcaption{
     font-size: 20px;
 }
-.products-column img {
+.products-column img{
     height: 300px;
     width: auto;
 }
