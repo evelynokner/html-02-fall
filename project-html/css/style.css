@@ -52,19 +52,8 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     height: auto;
 }
 .home-main{
-    width: 75%;
+    width: 100%;
     align-items: left;
-}
-.about, .history{
-    font-size: 20px;
-    padding: 20px 100px;
-}
-.about h1, .history h1{
-    color: #ff0080;
-    text-decoration: underline;
-}
-.history h3{
-    color: #40a9ee;    
 }
 .about{
     text-align: left;
@@ -72,35 +61,54 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 .history{
     text-align: right;
 }
-.characters{
-    text-align: center;
+.vintage-era, .color-era{
+    text-align: left;
+}
+.connection-era{
+    text-align: right;
+}
+.about, .history, .vintage-era, .connection-era, .color-era{
+    font-size: 20px;
+    padding: 20px 100px;
+}
+.about h1, .history h1{
+    color: #ff0080;
+    text-decoration: underline;
+}
+.vintage-era h3, .connection-era h3, .color-era h3{
+    color: #40a9ee;    
+}
+/* align images */
+.about img, .vintage-era img, .connection-era img, .color-era img{
+    width: 50%;
+    height: auto;
+    
+    border-style: dotted;
+    border-radius: 10px;
+    border-width: 5px;
+}
+.about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vintage-era img, .color-era img{
+    display: flex;
+    align-items: left;
+}
+.about img{
+    border-color: #ff0080;
+}
+.vintage-era img, .connection-era img, .color-era img{
+    border-color: #40a9ee;
 }
 .video{
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
 }
-.home-aside{
-    display: flex;
-    width: 25%;
-    background-color: #fff5c6;
-}
-
-/***********************************/
-.home-aside article{
-    width: 90%; /* 90% of 25% */
-    
-    text-align: center;
-}
-.home-aside article figure{
-    width: 100%;
-    height: auto;
-    margin: 0px;
-}
-.home-aside article figure img{
-    width: 100%;
-    height: auto;
-}
-/***********************************/
-
 
 /** ABOUT PAGE (about.html) **/
 .about-company h1{
@@ -128,16 +136,14 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 }
 .bandai-team{
     background-color: #efcf5b;
+    display: flex;
+    align-items: center;
 }
 .bandai-team img, .bandai-team figcaption{
     width: 50%;
     height: auto;
     display: flex;
     align-items: left;
-}
-.bandai-team{
-    display: flex;
-    align-items: center;
 }
 
 /** SHOP PAGE (shop.html) **/
@@ -175,32 +181,8 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     height: 300px;
     width: auto;
 }
-.back-button{
-    margin: auto;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-.back-button a{
-    text-decoration: none;
-}
-.back-button button{
-    padding: 0px 20px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #d6f6ff;
-    border-color: #40a9ee;
-}
-.back-button img{
-    width: 80px;
-}
-/***********************************/
 
 /** PRODUCT PAGES **/
-
 /* display image and product info side by side */
 .product-title{
     display: block;
@@ -226,13 +208,36 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     width: 50%;
     height: auto;
 }
+.back-button{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.back-button a{
+    text-decoration: none;
+}
+.back-button button{
+    padding: 0px 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #d6f6ff;
+    border-color: #40a9ee;
+}
+/* resize arrow img in button */
+.back-button img{
+    width: 80px;
+}
 
 /** CONTACT PAGE (contact.html) **/
 .contact-info, .contact-form{
     text-align: center;
 }
 .contact-info{
-    background-color: #c7f2ff;
+    background-color: #91f7f7;
     display: block;
     margin: auto;
     width: 35%;
@@ -241,7 +246,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     font-size: 25px;
     border-style: double;
     border-width: 20px;
-    border-color: #245484;
+    border-color: #40a9ee;
 }
 .contact-form p{
     font-size: 25px;
