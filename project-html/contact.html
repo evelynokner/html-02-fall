@@ -28,28 +28,31 @@
                 <img src="./img//logos/bandai-namco-logo.png" alt="bandai namco logo">
             </div>
             <hr class="line">
-            <!-- bandai.com/contact for reference -->
-            <section class="contact-info">
+            <div class="contact-info">
+                <!-- bandai.com/contact for reference -->
                 <h1>CONTACT US</h1>
                 <p>Phone: (877) 980.6221</p>
                 <p>Email: customerservice@bntca.com</p>
-            </section>
+            </div>
             <!-- line to visually break up content -->
-            <hr class="line">
-            <form class="contact-form">
+            
+            <section class="contact-form">
                 <h2>Contact Form</h2>
-                <h4>Use this form to contact us about your inquiries.</h4>
+                <h4>Fill out the form to contact us about your inquiries.</h4>
                 <!-- first name, last name, email, phone num, "Your message" -->
                 <form action="processingFile" method="post">
                     <p><label for="name">Your Name:</label></p>
-                    <p><input type="text" name="name" placeholder="John Doe" required></p>
+                    <p><input type="text" id="name" placeholder="Conner Kent" required></p>
                     <p><label for="email">Your Email:</label></p>
-                    <p><input type="email" name="email" placeholder="johndoe@email.com" required></p>
+                    <p><input type="email" id="email" placeholder="connerkent@email.com" required></p>
                     <p><label for="phone">Your Phone Number:</label></p>
                     <p><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(123) 456-7891"></p>
                     <p><textarea placeholder="Your message..." required></textarea></p>
-                    <input type="submit" value="Send Message">
-            </form>
+                    <div class="submit-btn">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </form>
+            </section>
         </main>
         <!-- applied with jQuery -->
         <footer id="footer"></footer>

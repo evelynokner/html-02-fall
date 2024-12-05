@@ -7,6 +7,7 @@ body{
 h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     font-family: "Outfit", sans-serif;
 }
+/* HEADER & FOOTER */
 /* change size of header & footer logo */
 #header div a img, #footer div a img{
     width: 250px;
@@ -15,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 }
 #header, #footer{
     background-color: #40cccc;
-    padding: 10px;
+    padding: 10px 40px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -40,12 +41,22 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 }
 /* adjust footer social media icons */
 #footer .sns-icons a img{
-    height: 60px;
+    height: 40px;
     width: auto;
     display: flex;
     align-items: center;
     padding: 10px;
 }
+#footer .footer-icon img{
+    height: 80px;
+    width: auto;
+    padding-left: 70px;
+}
+#footer .copyright{
+    padding-left: 200px;
+    font-size: 15px;
+}
+
 /** HOMEPAGE (index.html) **/
 .home-masthead img{
     width: 100%;
@@ -54,6 +65,15 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 .home-main{
     width: 100%;
     align-items: left;
+}
+.home-main h1{
+    font-size: 40px;
+}
+.home-main h3{
+    font-size: 30px;
+}
+.home-main p{
+    font-size: 22px;
 }
 .about{
     text-align: left;
@@ -82,7 +102,6 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 .about img, .vintage-era img, .connection-era img, .color-era img{
     width: 50%;
     height: auto;
-    
     border-style: dotted;
     border-radius: 10px;
     border-width: 5px;
@@ -138,12 +157,30 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     background-color: #efcf5b;
     display: flex;
     align-items: center;
+    padding-left: 50px;
 }
-.bandai-team img, .bandai-team figcaption{
-    width: 50%;
+/* vertically align figcaption w/ figure image */
+.bandai-team figure{
+    background-color: #262626;
+    vertical-align: middle;
+    text-align: center;
+}
+.bandai-team img{
+    width: 600px;
     height: auto;
     display: flex;
-    align-items: left;
+    align-items: center;
+}
+.bandai-team figcaption{
+    font-size: 20px;
+    color: #ed0000;
+}
+.bandai-team h1{
+    font-size: 30px;
+}
+.bandai-team p{
+    font-size: 25px;
+    padding-right: 100px;
 }
 
 /** SHOP PAGE (shop.html) **/
@@ -151,7 +188,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     display: flex;
     padding: 2%;
 }
-/* align products title */
+/* vertically align products title with product image */
 .shop-main section h1{
     display: block;
     margin-left: auto;
@@ -169,10 +206,13 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     width: 50%;
 }
 /* align name of product vertically with product img */
-.products-column figure, .bandai-team figure{
+.products-column figure{
     border-style: dashed;
     vertical-align: middle;
     text-align: center;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #40a9ee;
 }
 .products-column figure figcaption{
     font-size: 20px;
@@ -236,12 +276,13 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
 .contact-info, .contact-form{
     text-align: center;
 }
+/* contact info block */
 .contact-info{
     background-color: #91f7f7;
     display: block;
     margin: auto;
     width: 35%;
-    margin: autp;
+    margin: auto;
     text-align: center;
     font-size: 25px;
     border-style: double;
@@ -253,6 +294,42 @@ h1, h2, h3, h4, h5, h6, p, figcaption, li, textarea, form input, button{
     padding: 5px 0px;
     margin: 0px;
 }
+.contact-form p input{
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: #40a9ee;
+    background-color: #daecf8;
+    margin-bottom: 10px;
+}
+.contact-form h2{
+    font-size: 40px;
+}
+.contact-form h4{
+    font-size: 20px;
+}
+.contact-form textarea{
+    width: 400px;
+    height: 160px;
+    border-radius: 5px;
+    border-color: #ed0000;
+    background-color: #fae1e1;
+    margin: 20px;
+    font-size: 20px;
+}
+.submit-btn input{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    background-color: #efcf5b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 .line{
-    border-color: #40cccc;
+    border-color: #ed0000;
 }
